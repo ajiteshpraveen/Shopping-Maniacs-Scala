@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>BILLING PORTAL</title>
+<style>
+header{
+background-image:url("header.jpg");
+}
+div{
+background-image:url("description.jpg");
+background-size:100% 100%;
+margin-left:10px;
+}
+input{
+	width:300px;
+}
+button{
+	width:100px;
+	height:50px;
+}
+table{
+width:50%;
+text-align:center;
+border:0px solid black;
+}
+article{
+background-image:url("article.jpg");
+background-size:100% 100%;
+width:100%;
+height:68%;
+}
+footer{
+background-image:url("header.jpg");
+text-align:center;
+}
+</style>
+</head>
+<body>
+<header>
+<center>
+<h1>BILLING PORTAL</h1>
+</center>
+</header>
+<div class="container">
+<p><b>Reference No.: <label id="rno">1234</label></b></p>
+<p><b>Billing date <nbsp><nbsp>: <label id="rno">30/04/2017</label></b></p>
+<p><b>Customer name: <label id="rno"><input type = "text" name = "c_name" id = "c_name"></label></b></p>
+</div>
+<center>
+<article>
+<table>
+<tr>
+<th>Item Name</th>
+<th>Quantity</th>
+<th>Price/pc</th>
+</tr>
+<tr>
+<td><input type = "text" name = "item_name1" id = "item_name1"></td>
+<td><input type = "number" name = "quantity1" id = "quantity1"></td>
+<td><input type = "number" name = "price1" id = "price1"></td>
+</tr>
+<tr>
+<td><input type = "text" name = "item_name2" id = "item_name2"></td>
+<td><input type = "number" name = "quantity2" id = "quantity2"></td>
+<td><input type = "number" name = "price2" id = "price2"></td>
+</tr>
+<tr>
+<td><input type = "text" name = "item_name3" id = "item_name3"></td>
+<td><input type = "number" name = "quantity3" id = "quantity3"></td>
+<td><input type = "number" name = "price3" id = "price3"></td>
+</tr>
+<tr>
+<td><input type = "text" name = "item_name4" id = "item_name4"></td>
+<td><input type = "number" name = "quantity4" id = "quantity4"></td>
+<td><input type = "number" name = "price4" id = "price4"></td>
+</tr>
+</table><br /><br />
+<center>
+<button type = "submit" name = "total" id = "total">Calculate</button>
+</center>
+</form>
+ <script type="text/javascript" src="./target/scala-2.12/scala-js-tutorial-jsdeps.js"></script>
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="./target/scala-2.12/scala-js-tutorial-fastopt.js"></script>
+</article>
+</center>
+<footer>
+<p><b>&copy SHOPPING MANIACS-2017</b></p>
+</footer>
+</body>
+</html>
